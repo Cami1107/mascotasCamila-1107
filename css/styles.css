@@ -1,0 +1,667 @@
+    
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+}
+
+:root{
+    --azul:#77aff9;
+    --azul-claro:#bdeaf7;
+    --azul-oscuro:#2c4674;
+    /* crear las variables de color */
+}
+
+.home{
+    width: 100%;
+    /* para hacer el degradado */
+    /* buscar en google backgound gradient */
+    background: linear-gradient(var(--azul-claro),var(--azul));
+
+}
+
+.hipervinculo{
+    text-decoration: none;
+
+}
+
+.content-center{
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    /* vh es viewer height, para definir el alto de la pantalla */
+    min-height: 100vh;
+    position: relative;
+    min-height: 800px;
+    max-height: 900px;
+    height: 100vh;
+}
+
+/* ESTILOS INDEX */
+/* estilos de botones */
+
+.home .cont-botones{
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* estilos */
+.cont-botones button{
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0;
+    background: #ffffff;
+    margin: 0 2px;
+
+}
+
+.cont-botones button.active{
+    background-color: var(--azul-oscuro);
+}
+
+/* estilos del texto h1 */
+
+.home h1{
+    text-align: right;
+    padding: 0 40px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 55px;
+}
+
+.home h1 strong{
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+.home p{
+    padding: 0 50px;
+    font-size: 18px;
+    color: var(--azul-oscuro);
+
+}
+/* estilos de las imagenes */
+.home .img-principal{
+    width: 100%;
+    height: 420px;
+    /* arreglar la ruta de la carpeta */
+    /* background: url("../tu-amigo-en-casa-main/01-front-end/images/slide1.png") no-repeat; */
+    position: absolute;
+    bottom: -420px;
+    left: 0;
+}
+
+.home #img-1{
+    background: url("../tu-amigo-en-casa-main/01-front-end/images/slide1.png") no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.home #img-1.active{
+    bottom: 0;   
+    transition: 1s;
+}
+
+.home #img-2{
+    background: url("../tu-amigo-en-casa-main/01-front-end/images/slide2.png") no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.home #img-2.active{
+    bottom: 0;
+    transition: 1s;
+}
+
+.home .btn-a{
+    display: inline-block;
+    background: var(--azul-claro);
+    width: 50px;
+    height: 34px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--azul-oscuro);
+    padding-top: 16px;
+    transition: 1s;
+}
+
+.home .btn-a:hover{
+    transform: rotate(90deg);
+    color: #2c4674;
+}
+
+/* FIN ESTILOS INDEX */
+
+/* INICIO ESTILOS HOME */
+
+.home-p{
+    width: 100%;
+    background: var(--azul-claro);
+    height: 100vh;
+}
+/* INICIO ESTILOS CONT-SUPERIOR */
+.home-p .cont-superior{
+    display: flex;
+    justify-content: flex-start;
+}
+.home-p .btn-home{
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    left: 7%;
+    top: 3%;
+    font-weight: 600;
+    font-size: 4vh;
+    color: var(--azul-oscuro);
+}
+
+.home-p .cont-superior h1{
+    position: absolute;
+    color: var(--azul-oscuro);
+    left: 39%;
+    top: 4%;
+    font-weight: 500;
+    font-size: 3.2vh;
+    margin-left: 8px;
+
+}
+
+/* INICIO ESTILOS BARRA-BUSQUEDA */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    width: 366px;
+    height: 40px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    left: 6%;
+    top: 13%;
+}
+  
+  .contenedor-img-lupa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+    background-color: #FFFFFF;
+  }
+  
+  .img-lupa {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .input-busq {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  
+/* INICIO ESTILOS BOTONES ANIMALES */
+.btn-animal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34%;
+    gap: 6%;  
+    
+}
+  
+.btn-animal button{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 41vw;
+    height: 6vh;
+    padding-left: 2%;
+    border: 5px solid transparent;
+    border-radius: 40px;
+    color: var(--azul-oscuro);
+    background: white;
+  }
+.btn-animal button.active{
+    color: white;
+    background: var(--azul);
+    border: 5px solid transparent;
+    border-radius: 40px;
+
+}
+    
+.btn-animal button img {
+    background: var(--azul-claro);
+    width: 8vw;
+    height: 4vh;
+    border-radius: 44%;
+    border: 5px solid transparent;
+}
+.btn-animal button img.active{
+    background: white;
+}
+  
+.btn-animal button span {
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+
+/* estilos de las cartas */
+
+.home-p .cards-animal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 22px;
+    background-color: var(--azul-claro);
+    display: none;
+}
+
+.home-p .cards-animal.active{
+    display: grid;
+}
+.home .cards-animal .card-info h2{
+    color: var(--azul-oscuro);
+}
+
+.home-p .cards-animal .img-animales{
+    position: relative;
+    height: 76%;
+    top: -13%;
+    left: 3%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* info cards */
+.home-p .cards-animal .card-info{
+    background: white;
+    position: absolute;
+    width: 86%;
+    height: 33%;
+    top: 63%;
+    border-bottom-left-radius: 24%;
+    border-bottom-right-radius: 24%;
+    padding: 7%;
+}
+
+.home-p #card-gatos .card-info{
+    height: 33%;
+}
+
+.card-info .nombre{
+    color: var(--azul-oscuro);
+    font-weight: 600;
+}
+
+.card-info p{
+    color: #77aff9;
+    font-size: 1.5vh;
+}
+.card-info h2, .card-info p {
+    text-align: left;
+}
+  
+/* texto */
+
+
+.precio-like li {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 13%;
+}
+
+.precio-like li .precio {
+    text-align: left;
+    color: var(--azul-oscuro);
+    font-weight: 500;
+}
+
+.card {
+    background-color: #fff;
+    width: 93%;
+    position: relative;
+    left: 3%;
+    height: 86%;
+    margin-top: 22%;
+    border-radius: 12%;
+}
+
+.cards-animal{
+    display: none;
+}
+
+/* .cards-animal{
+    display: ;
+} */
+.card-info {
+    text-align: left;
+}
+
+.nombre {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.like {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.like img {
+    width: 20px;
+    height: 20px;
+}
+
+/* cambiar el fondo y tamaño de imagen de las cards */
+/* estilos tarjeta ivanna */
+.cards-animal .card:nth-child(1) {
+    background: #e3c069;
+}
+
+/* estilos tarjeta Alvan */
+.cards-animal .card:nth-child(2) {
+    background: #d1723f;
+}
+
+.cards-animal .card:nth-child(2) .img-animales{
+    position: relative;
+    height: 71%;
+    top: -3%;
+    left: 0%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* estilos tarjeta Kartens */
+.cards-animal .card:nth-child(3) {
+    background: #488db3;
+}
+.cards-animal .card:nth-child(3) .img-animales{
+    position: relative;
+    height: 85%;
+    top: -10%;
+    left: 0%;
+    max-width: 100%;
+}
+/* estilos tarjeta Reigner */
+.cards-animal .card:nth-child(4) {
+    background: #58c084 ;
+}
+
+.cards-animal .card:nth-child(4) .img-animales{
+    position: relative;
+    height: 96%;
+    top: -33%;
+    left: 5%;
+    max-width: 100%;
+}
+
+/* cambiar a gatos o perros */
+.gato{
+    height: 94%;
+}
+/* estilos gatos */
+.cards-animal .gato:nth-child(1){
+    background-color: #58c084;
+}
+
+.cards-animal .gato:nth-child(1) img{
+    height: 49%;
+    top: 14%;
+    left: 2%;
+}
+.cards-animal .gato:nth-child(2){
+    background-color: #488db3;
+}
+
+.cards-animal .gato:nth-child(2) .img-animales{
+    position: relative;
+    height: 50%;
+    top: 13%;
+    left: 6%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.cards-animal .gato:nth-child(3){
+    margin-top: 34%;
+    background: #d1723f;
+}
+
+.cards-animal .gato:nth-child(3) .img-animales{
+    position: relative;
+    height: 56%;
+    top: 7%;
+    left: 0%;
+    max-width: 100%;
+}
+
+.cards-animal .gato:nth-child(4){
+    margin-top: 34%;
+    background: #e3c069;
+}
+
+.cards-animal .gato:nth-child(4) .img-animales{
+    position: relative;
+    height: 63%;
+    top: 0%;
+    left: 5%;
+    max-width: 100%;
+}
+
+
+
+/* ESTILOS DETALLE DE ANIMALES */
+
+.page-perro{
+    width: 100%;
+    background: white;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* estilos comprar ESTA BIEN*/
+.comprar{
+    width: 100%;
+    background: var(--azul-claro);
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    border-radius: 4%;
+    height: 98vh;
+}
+
+.comprar .gatito{
+    background: #d1723f;
+    position: relative;
+    padding: 0;
+    height: 522px;
+    border-radius: 8%;
+    top: -7%;
+}
+
+
+.comprar .botones-sop{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.comprar .botones-sop .corazon{
+    border: none;
+    background: transparent;
+    height: 2vh;
+    width: 5vh;
+}
+
+
+.comprar .cont-gato {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    bottom: 0px;
+}
+
+.comprar .cont-gato img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.comprar .descripcion{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    bottom: 10px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.comprar .descripcion .descripcion-n{
+    position: relative;
+    background: #d9d5d2c1;
+    border-radius: 20px;
+    bottom: 20px;
+    width: 22%;
+    height: 80px;
+
+}
+
+.comprar .descripcion .descripcion-n h2{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    color: #2c4674;
+    font-size: 15px;
+}
+
+.comprar .descripcion .descripcion-n p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    color: #2c4674;
+}
+
+.comprar .informacion{
+    position: absolute;
+    z-index: 10;
+    top: 530px;
+    left: 35px;
+    color: #2c4674;
+    text-align: left;
+}
+
+.comprar .price{
+    z-index: 11;
+    position: absolute;
+    font-size: 25px;
+    color: #2c4674;
+    left: 330px;
+    top: 530px;
+}
+
+.comprar .dueno{
+    position: absolute;
+    z-index: 12;
+    top: 650px;
+    left: 40px;
+}
+
+.comprar .dueno-n{
+    position: relative;
+    z-index: 13;
+    top: 16vh;
+    left: 15vh;
+    color: #2c4674;
+    text-align: left
+}
+
+.comprar .button button{
+    position: absolute;
+    width: 87%;
+    height: 6%;
+    border-radius: 23px;
+    border: none;
+    background: #58C084;
+    color: #fff;
+    top: 89%;
+    left: 7%;
+    right: 0;
+    font-size: 2vh;
+}
+
+.comprar .content-center {
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    min-height: 800px;
+    max-height: 903vh;
+    height: 95vh;
+    top: 6vh;
+}
+
+.botones-sop .text-boton-comprar{
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: 400;
+    color: white;
+}
+
+.comprar .perrito{
+    background: #488db3;
+}

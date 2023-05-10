@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu mejor amigo en casa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="home-p">
+        <!-- contenedor para centrar el contenido -->
+        <div class="content-center">
+            <div class="cont-superior">
+                <a href="index.html" class="btn-home">></a>
+                <h1>Buscar</h1>
+            </div>
+            <!-- Barra de busqueda -->
+            <div class="barra-busqueda">
+                <div class="contenedor-img-lupa">
+                    <img src="tu-amigo-en-casa-main/01-front-end/images/search.svg" alt="lupita" class="img-lupa">
+                </div>
+                <input type="text" placeholder="Firulais" class="input-busq">
+            </div>
+            <!-- botones perros y gatos -->
+            <div class="btn-animal">
+                <button class="active" id="btn-perros" onclick="activarBtnA()">
+                  <img src="tu-amigo-en-casa-main/01-front-end/images/fa-solid_dog.svg" alt="Perros" class="active" id="img-perros">
+                  <span>Perros</span>
+                </button>
+                <button class="" id="btn-gatos" onclick="activarBtnB()">
+                  <img src="tu-amigo-en-casa-main/01-front-end/images/fa-solid_cat.svg" alt="Gatos" class="" id="img-gatos">
+                  <span>Gatos</span>
+                </button> 
+            </div>
+             <!-- cartas DE PERRO -->
+            <div class="cards">
+                <!-- CARTAS DE PERRO -->
+                <div class="cards-animal active"  id="card-perros">
+                 <!-- primera tarjeta -->
+                    <div class="card perro">
+                        <img src="tu-amigo-en-casa-main/01-front-end/images/ivana.png" alt="ivana" class="img-animales">
+                        <div class="card-info">
+                            <h2 class="nombre">Ivanna</h2>
+                            <p>Corgi</p>
+                            <ul class="precio-like">
+                                <li>
+                                    <ul class="precio">$400</ul>
+                                    <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                    </div>
+                    <!-- segunda tarjeta -->
+                    <div class="card perro">
+                            <img src="tu-amigo-en-casa-main/01-front-end/images/alvan.png" alt="ivana" class="img-animales">
+                            <div class="card-info">
+                                <h2 class="nombre">Alvan</h2>
+                                <p>Corgi</p>
+                                <ul class="precio-like">
+                                    <li>
+                                        <ul class="precio">$300</ul>
+                                        <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- tercera tarjeta -->
+                    <div class="card perro">
+                            <img src="tu-amigo-en-casa-main/01-front-end/images/karsten-big.png" alt="ivana" class="img-animales" >
+                            <div class="card-info">
+                                <a href="perritos.html" class="hipervinculo"><h2 class="nombre">Karsten</h2></a>
+                                <a href="perritos.html" class="hipervinculo"><p>Bulldog</p></a>
+                                <ul class="precio-like">
+                                    <li>
+                                        <ul class="precio">$400</ul>
+                                        <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- cuarta tarjeta -->
+                    <div class="card perro">
+                            <img src="tu-amigo-en-casa-main/01-front-end/images/reigner.png" alt="ivana" class="img-animales">
+                            <div class="card-info">
+                                <h2 class="nombre">Reigner</h2>
+                                <p>Bulldog</p>
+                                <ul class="precio-like">
+                                    <li>
+                                        <ul class="precio">$240</ul>
+                                        <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <!-- CARTAS DE GATICOS -->
+                <div class="cards-animal" id="card-gatos">
+                    <!-- primera tarjeta -->
+                    <div class="card gato">
+                        <img src="tu-amigo-en-casa-main/01-front-end/images/ariana.png" alt="Ariana" class="img-animales">
+                        <div class="card-info">
+                            <h2 class="nombre">Ariana</h2>
+                            <p>Graycat</p>
+                            <ul class="precio-like">
+                                <li>
+                                    <ul class="precio">$40</ul>
+                                    <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- segunda tarjeta -->
+                    <div class="card gato">
+                            <img src="tu-amigo-en-casa-main/01-front-end/images/remi.png" alt="Remi" class="img-animales">
+                            <div class="card-info">
+                                <h2 class="nombre">Remi</h2>
+                                <p>Whitecat</p>
+                                <ul class="precio-like">
+                                    <li>
+                                        <ul class="precio">$40</ul>
+                                        <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- tercera tarjeta -->
+                    <div class="card gato">
+                            <img src="tu-amigo-en-casa-main/01-front-end/images/alex.png" alt="alex" class="img-animales">
+                            <div class="card-info">
+                                <a href="page.html" class="hipervinculo"><h2 class="nombre">Alex</h2></a>
+                                <a href="page.html" class="hipervinculo"><p>Siamese</p></a>
+                                <ul class="precio-like">
+                                    <li>
+                                        <ul class="precio">$100</ul>
+                                        <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- cuarta tarjeta -->
+                    <div class="card gato">
+                            <img src="tu-amigo-en-casa-main/01-front-end/images/zoe.png" alt="Zoe" class="img-animales">
+                            <div class="card-info">
+                                <h2 class="nombre">Zoe</h2>
+                                <p>Persian</p>
+                                <ul class="precio-like">
+                                    <li>
+                                        <ul class="precio">$80</ul>
+                                        <ul class="like"><img src="tu-amigo-en-casa-main/01-front-end/images/sm-heart.svg" alt=""></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
